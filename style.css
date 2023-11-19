@@ -1,18 +1,19 @@
 body {
- -webkit-font-family: Blippo, fantasy; 
-  -webkit-text-align: center;
-  -webkit-font-size: 16px;
+  font-family: Blippo, fantasy;
+  text-align: center;
+  font-size: 30px;
   background-image: url(./imagens/background.jpg);
   background-color: #000000;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
 }
 
 .container {
-  -webkit-text-align: center;
-  -webkit-padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 .page-title {
@@ -25,8 +26,8 @@ body {
 
 #div_label {
   color: #390d25;
-  -webkit-font-size: 16px; /* altera o tamanho do texto/fonte */
-  -webkit-margin-top: 7.5%; /* altera a altura da div*/
+  font-size: 18px; /* altera o tamanho do texto/fonte */
+  margin-top: 7.5%; /* altera a altura da div*/
 }
 
 #information_box {
