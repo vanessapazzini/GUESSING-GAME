@@ -1,7 +1,7 @@
 body {
   font-family: Blippo, fantasy;
   text-align: center;
-  font-size: 30px;
+  font-size: 16px;
   background-image: url(./imagens/background.jpg);
   background-color: #000000;
   background-size: cover;
@@ -25,7 +25,7 @@ body {
 
 #div_label {
   color: #390d25;
-  font-size: 18px; /* altera o tamanho do texto/fonte */
+  font-size: 16px; /* altera o tamanho do texto/fonte */
   margin-top: 7.5%; /* altera a altura da div*/
 }
 
