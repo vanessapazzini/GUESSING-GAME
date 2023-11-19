@@ -11,15 +11,8 @@ body {
 }
 
 .container {
- display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  z-index: 51;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 7.5%;
+  text-align: center;
+  padding: 20px;
 }
 
 .page-title {
@@ -34,7 +27,6 @@ body {
   color: #390d25;
   font-size: 18px; /* altera o tamanho do texto/fonte */
   margin-top: 7.5%; /* altera a altura da div*/
-  height: auto;
 }
 
 #information_box {
