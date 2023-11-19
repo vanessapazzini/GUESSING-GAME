@@ -34,6 +34,7 @@ body {
   color: #390d25;
   font-size: 18px; /* altera o tamanho do texto/fonte */
   margin-top: 7.5%; /* altera a altura da div*/
+  height: auto;
 }
 
 #information_box {
