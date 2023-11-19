@@ -1,0 +1,73 @@
+body {
+  font-family: Blippo, fantasy;
+  text-align: center;
+  font-size: 30px;
+  background-image: url(./imagens/background.jpg);
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  background: -webkit-linear-gradient(#063b5a,#670338);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 5px;
+}
+
+
+#div_label {
+  color: #390d25;
+  font-size: 18px; /* altera o tamanho do texto/fonte */
+  margin-top: 7.5%; /* altera a altura da div*/
+}
+
+#information_box {
+  background: linear-gradient(#39a2e3,#33051d);
+  width: 250px; /* altera o tamanho da "caixa"*/
+  height: 130px; /* altera a altura*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ok_button {
+  margin-right: 7%;
+  width: 75px;
+  height: 20px;
+  border-radius: 5%;
+  color: #ffffff;
+  background-color: #098772;
+}
+
+#cancel_button {
+  width: 75px;
+  height: 21.5px;
+  border-radius: 5%;
+  color: #ffffff;
+  background-color: #098772;
+}
+
+#autoral {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  color: #ffffff;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+}
+
+body > img {
+  margin: 0 10px;
+}
+
+img {
+  max-height: 350px;
+}
