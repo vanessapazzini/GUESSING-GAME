@@ -1,4 +1,4 @@
-# guessing_game
+# GUESSING GAME
 Jogo de adivinhação. Neste game, o programa escolherá um número aleatório, e nosso objetivo é adivinhar esse número, dentro de 9 tentativas, através do raciocínio lógico e da intuição.
 Desenvolvido em: HTML, CSS, e Javascript.
 
