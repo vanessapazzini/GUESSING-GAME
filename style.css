@@ -1,7 +1,7 @@
 body {
-  font-family: Blippo, fantasy;
-  text-align: center;
-  font-size: 16px;
+ -webkit-font-family: Blippo, fantasy; 
+  -webkit-text-align: center;
+  -webkit-font-size: 16px;
   background-image: url(./imagens/background.jpg);
   background-color: #000000;
   background-size: cover;
@@ -11,8 +11,8 @@ body {
 }
 
 .container {
-  text-align: center;
-  padding: 20px;
+  -webkit-text-align: center;
+  -webkit-padding: 20px;
 }
 
 .page-title {
@@ -25,8 +25,8 @@ body {
 
 #div_label {
   color: #390d25;
-  font-size: 16px; /* altera o tamanho do texto/fonte */
-  margin-top: 7.5%; /* altera a altura da div*/
+  -webkit-font-size: 16px; /* altera o tamanho do texto/fonte */
+  -webkit-margin-top: 7.5%; /* altera a altura da div*/
 }
 
 #information_box {
