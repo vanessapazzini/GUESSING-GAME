@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "texto";
+  src: local("texto"), url("TEXT.TTF") format("ttf");
+}
+
 body {
-  font-family: Blippo, fantasy;
+  font-family: "texto";
   text-align: center;
   font-size: 30px;
   background-image: url(./imagens/background.jpg);
@@ -11,8 +16,15 @@ body {
 }
 
 .container {
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  z-index: 51;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 7.5%;
 }
 
 .page-title {
@@ -26,7 +38,8 @@ body {
 #div_label {
   color: #390d25;
   font-size: 18px; /* altera o tamanho do texto/fonte */
-  margin-top: 7.5%; /* altera a altura da div*/
+  margin-top: 1%; /* altera a altura da div*/
+ 
 }
 
 #information_box {
