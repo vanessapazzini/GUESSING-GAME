@@ -1,7 +1,7 @@
 var user;
 var numeroSecreto = parseInt(Math.random() * 701);
 var chute;
-var tentativas = 0;
+var tentativas = 1;
 var maxTentativas = 9;
 
 // Ao iniciar a página
@@ -13,9 +13,10 @@ window.onload = () => {
     if (event.key === "Enter") {
    // Se for chama a funçaõ getUserName
     getUserName()
-  }
-}
-   // Adiciona a variável criada para chamar a função no método keyup do input
+  } 
+ }
+   
+  // Adiciona a variável criada para chamar a função no método keyup do input
     // Então cada vez que o enter for precionado ele "ativa" a função getUserName()
     document.getElementById("input_response").addEventListener("keyup", enter)
 }
@@ -72,13 +73,20 @@ function application() {
   // Converte a string do input para um número
   chute = parseInt(document.getElementById("input_response").value)
 
+   // Verifica se o chute está dentro do intervalo desejado
+   if (chute > 700 || chute <=0) {
+    // Altera o texto da tag label_text 
+    label.innerHTML = "Número invalido! Não foi consumido o número de tentativas."
+    return;  // Encerra a função para evitar processamento adicional
+  }
+
   // Incrementa o número de tentativas
   tentativas++
 
   // Verifica se o chute é igual ao número secreto
   if (chute === numeroSecreto) {
     // Altera o texto da tag label_text
-    label.innerHTML= "Ora ora " + user + ", não é que acertou mesmo? Você usou " + tentativas + "/" + maxTentativas
+    label.innerHTML= "Ora ora " + user + ", não é que acertou mesmo? Você usou " + (tentativas -1) + "/" + maxTentativas + " de tentativas"
 
     // Função para que não seja possivel clicar o enter
     blockEnter() 
@@ -88,20 +96,20 @@ function application() {
     setTimeout(function() {
       // Função que reseta o jogo
       resetGame(label)
-    } ,5000)
+    } ,4000)
 
   } else if (chute > numeroSecreto) {
     // Altera o texto da tag label_text 
-    label.innerHTML = "Errou... o número é menor. Você usou " + tentativas + "/" + maxTentativas + "."
+    label.innerHTML = "Errou... o número é menor. Você usou " + (tentativas -1) + "/" + maxTentativas + " de tentativas."
 
   } else if (chute < numeroSecreto) {
     // Altera o texto da tag label_text 
-    label.innerHTML = "Errou... o número é maior. Você usou " + tentativas + "/" + maxTentativas + "."
+    label.innerHTML = "Errou... o número é maior. Você usou " + (tentativas -1) + "/" + maxTentativas + " de tentativas."
   }
 
   
   // Verifica se atingiu o número máximo de tentativas
-  if (tentativas === maxTentativas) {
+  if (tentativas === (maxTentativas + 1) && chute !== numeroSecreto) {
 
 
      // Faz com que o botão seja desativado, impossibilitando de clciar
@@ -115,7 +123,7 @@ function application() {
     setTimeout(function() {
       // Função que reseta o jogo
       resetGame(label)
-    } ,5000) 
+    } ,4000) 
     
     
   }
